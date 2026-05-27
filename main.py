@@ -46,4 +46,3 @@ while y < 21:
     y += 1
     
     print(lines)
-
