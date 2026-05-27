@@ -27,19 +27,15 @@ while y < 21:
     x = 1
     lines = ""
     while x < 21:
-        if x == 10 and y == 10:
-            lines += "▮▮"
-        elif x == 10:
-            lines += "▮▮"
-        elif y == 10:
-            lines += "▮▮"
-        elif y == 1 and x >= 11:
-            lines += "▮▮"
-        elif y >= 10 and x == 20:
-            lines += "▮▮"
-        elif 1 <= y <= 10 and x == 1:
-            lines += "▮▮"
-        elif y == 20 and 0 < x < 11:
+        if (
+            (x == 10 and y == 10) 
+            or (x == 10) 
+            or (y == 10) 
+            or (y == 1 and x >= 11) 
+            or (y >= 10 and x == 20) 
+            or (1 <= y <= 10 and x == 1) 
+            or (y == 20 and 0 < x < 11)
+            ):
             lines += "▮▮"
         else:
             lines += "  "
