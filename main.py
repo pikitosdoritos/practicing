@@ -45,4 +45,4 @@ while y < 21:
     svaston.append(lines)   
     y += 1
     
-    print(lines)
+    print(lines) 
